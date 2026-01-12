@@ -13,6 +13,6 @@ COPY pyproject.toml .python-version uv.lock ./
 # Install dependecies from the uv.lock file
 RUN uv sync --locked
 
-COPY pipeline/pipeline.py pipeline.py
+COPY ingest_data.py .
 
-ENTRYPOINT ["python", "pipeline.py"]
+ENTRYPOINT ["python", "ingest_data.py"]
