@@ -224,7 +224,6 @@ terraform.rc
 
 ### venv ###
 # Virtualenv
-# http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
 [Bb]in
 [Ii]nclude
 [Ll]ib
@@ -250,8 +249,12 @@ venv/
 venv.bak
 uv.lock
 uv.lock.lock
-.venv/
+
 
 # Other
 .stfolder/
 *.parquet
+.stignore
+.sync-conflict-*
+keys/
+*.json
