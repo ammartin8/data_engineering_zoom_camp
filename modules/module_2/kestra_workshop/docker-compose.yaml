@@ -13,23 +13,22 @@ services:
       POSTGRES_USER: root
       POSTGRES_PASSWORD: root
       POSTGRES_DB: ny_taxi
+    networks:
+      - kestra_network    
     ports:
       - "5432:5432"
     volumes:
       - ny_taxi_postgres_data:/var/lib/postgresql
-    networks:
-      - pg-network
-
 
   pgadmin:
     image: dpage/pgadmin4
     environment:
       - PGADMIN_DEFAULT_EMAIL=admin@admin.com
       - PGADMIN_DEFAULT_PASSWORD=root
+    networks:
+      - kestra_network    
     ports:
       - "8085:80"
-    networks:
-      - pg-network
 
   kestra_postgres:
     image: postgres:18
@@ -45,7 +44,7 @@ services:
       timeout: 10s
       retries: 10
     networks:
-      - pg-network
+      - kestra_network
 
   kestra:
     image: kestra/kestra:v1.1
@@ -57,7 +56,7 @@ services:
     command: server standalone
     volumes:
       - kestra_data:/app/storage
-      - /var/run/docker.sock:/var/run/docker.sock
+      - /run/user/1000/docker.sock:/var/run/docker.sock
       - /tmp/kestra-wd:/tmp/kestra-wd
     environment:
       KESTRA_CONFIGURATION: |
@@ -84,14 +83,14 @@ services:
             tmpDir:
               path: /tmp/kestra-wd/tmp
           url: http://localhost:8080/
+    networks:
+      - kestra_network
     ports:
       - "8080:8080"
       - "8081:8081"
     depends_on:
       kestra_postgres:
         condition: service_started
-    networks:
-      - pg-network
-    
+
 networks:
-  pg-network:
+  kestra_network:
