@@ -260,3 +260,4 @@ uv.lock.lock
 .sync-conflict-*
 keys/
 *.json
+.env_encoded
