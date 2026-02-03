@@ -261,3 +261,4 @@ uv.lock.lock
 keys/
 *.json
 .env_encoded
+/modules/module_3/project_03/README.md
