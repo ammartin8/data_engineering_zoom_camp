@@ -4,7 +4,7 @@ Note: Using projectID and dataset labels instead of actual names.
 ## Question 1.
 What is count of records for the 2024 Yellow Taxi Data?
 
-ANSWER:20,332,093
+ANSWER: 20,332,093
 
 Query:
 ```sql
@@ -77,7 +77,7 @@ Query:
 CREATE OR REPLACE TABLE `projectID.dataset.yellow_tripdata_2024_ext`
 PARTITION BY DATE(tpep_pickup_datetime)
 CLUSTER BY VendorID AS
-SELECT * FROM dtc-de-mod1-workshop22937.zoomcamp.yellow_tripdata_2024_ext
+SELECT * FROM projectID.dataset.yellow_tripdata_2024_ext
 ;
 ```
 
