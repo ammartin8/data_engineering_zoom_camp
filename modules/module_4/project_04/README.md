@@ -4,10 +4,10 @@ The objective was to create a dbt project that creates a data warehouse using th
 
 The following steps were taken
 
-    - Set up dbt project following the dbt cloud setup guide
-    - Loaded the Green and Yellow taxi data for 2019-2020 files into a Google Cloud Storage bucket (Used Docker and Kestra tool to orchestrate ETL)
-    - Created data models within dbt that create the required dimensions, fact tables, macro functions, etc.
-    - Ran dbt build --target default to create all models and run tests
+  - Set up dbt project following the dbt cloud setup guide
+  - Loaded the Green and Yellow taxi data for 2019-2020 files into a Google Cloud Storage bucket (Used Docker and Kestra tool to orchestrate ETL)
+  - Created data models within dbt that create the required dimensions, fact tables, macro functions, etc. All dbt models are located [here](../dbt_workshop/taxi_ny_data/).
+  - Ran dbt build --target default to create all models and run tests
 
 After a successful build, the following models were created: fct_trips, dim_zones, and fct_monthly_zone_revenue within the data warehouse.
 
@@ -105,7 +105,7 @@ Using the fct_monthly_zone_revenue table, what is the total number of trips (tot
 
 SQL Query:
 ```sql
---Total Trips for green taxi in Octorber
+--Total Trips for green taxi in October
 
 SELECT revenue_month, sum(total_monthly_trips) FROM dbt_am_dev.fct_monthly_zone_revenue
 where service_type = 'Green' and EXTRACT(year from revenue_month) = 2019 and EXTRACT(month from revenue_month) = 10
@@ -117,11 +117,17 @@ group by revenue_month
 
 Create a staging model for the For-Hire Vehicle (FHV) trip data for 2019.
 
-    Load the FHV trip data for 2019 into your data warehouse
-    Create a staging model stg_fhv_tripdata with these requirements:
-        Filter out records where dispatching_base_num IS NULL
-        Rename fields to match your project's naming conventions (e.g., PUlocationID → pickup_location_id)
+  Load the FHV trip data for 2019 into your data warehouse
+  Create a staging model stg_fhv_tripdata with these requirements (model defined [here](../dbt_workshop/taxi_ny_data/models/staging/)):
+      Filter out records where dispatching_base_num IS NULL
+      Rename fields to match your project's naming conventions (e.g., PUlocationID → pickup_location_id)
 
 What is the count of records in stg_fhv_tripdata?
 
-**ANSWER: **
+**ANSWER: 43,244,693**
+
+SQL Query:
+```
+-- stg_fhv_tripdata record count
+SELECT count(*) FROM `projectID.dbt_am_dev.stg_fhv_tripdata`;
+```

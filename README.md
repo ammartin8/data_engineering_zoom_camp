@@ -12,6 +12,9 @@ Link to homework 2 - [Project_02](modules/module_2/project_02/README.md)
 ### Module 3 - [Data Warehouse and BigQuery Workshop](modules/module_3/)
 Link to homework 3 - [Project_03](modules/module_3/project_03/README.md)
 
+### Module 4 - [Analytical Engineering with dbt Workshop](modules/module_4/)
+Link to homework 4 - [Project_04](modules/module_4/project_04/README.md)
+
 ## Acknowledgments
 
 Thank you to the Data Engineering Zoom Camp Instructors and Data.Talks Club for providing tutorials and guidance on building real world projects!
