@@ -261,3 +261,7 @@ uv.lock.lock
 keys/
 *.json
 .env_encoded
+.bruin.yml
+logs/runs
+logs/*.log
+.cursor/
