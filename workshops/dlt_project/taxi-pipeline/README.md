@@ -16,6 +16,9 @@ You'll be working with **NYC Yellow Taxi trip data** from a custom API (not avai
 | Pagination | Stop when an empty page is returned |
 
 
+**Please note final data pipeline code for homework responses can be referenced here: 
+[taxi_data_pipeline_eda.ipynb](taxi_data_pipeline_eda.ipynb)**
+
 ## Question 1: What is the start date and end date of the dataset?
 ANSWER: 2009-06-01 to 2009-07-01
 

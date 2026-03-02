@@ -15,7 +15,7 @@ Link to homework 3 - [Project_03](modules/module_3/project_03/README.md)
 ### Module 4 - [Analytical Engineering with dbt Workshop](modules/module_4/)
 Link to homework 4 - [Project_04](modules/module_4/project_04/README.md)
 
-### Module 5 - [Data Platforms with dltHub Workshop](workshops/dlt_project/)
+### Module 5 - [Data Platforms with dltHub Workshop](workshops/)
 Link to homework 5 - [Project_05](workshops/dlt_project/taxi-pipeline/README.md)
 
 
