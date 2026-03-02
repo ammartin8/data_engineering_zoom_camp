@@ -15,6 +15,10 @@ Link to homework 3 - [Project_03](modules/module_3/project_03/README.md)
 ### Module 4 - [Analytical Engineering with dbt Workshop](modules/module_4/)
 Link to homework 4 - [Project_04](modules/module_4/project_04/README.md)
 
+### Module 5 - [Data Platforms with dltHub Workshop](workshops/dlt_project/)
+Link to homework 5 - [Project_05](workshops/dlt_project/taxi-pipeline/README.md)
+
+
 ## Acknowledgments
 
 Thank you to the Data Engineering Zoom Camp Instructors and Data.Talks Club for providing tutorials and guidance on building real world projects!
