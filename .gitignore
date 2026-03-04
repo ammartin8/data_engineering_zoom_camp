@@ -255,7 +255,6 @@ uv.lock.lock
 
 # Other
 .stfolder/
-*.parquet
 .stignore
 .sync-conflict-*
 keys/
@@ -265,3 +264,12 @@ keys/
 logs/runs
 logs/*.log
 .cursor/
+
+# Spark things
+*.snappy.parquet.*
+
+
+# Data files
+*.csv*
+*.parquet
+fhvhv/
