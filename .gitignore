@@ -273,3 +273,6 @@ logs/*.log
 *.csv*
 *.parquet
 fhvhv/
+data/
+tmp/
+zones/
