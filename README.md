@@ -19,6 +19,9 @@ Link to homework 4 - [Project_04](modules/module_4/project_04/README.md)
 Link to homework 5 - [Project_05](workshops/dlt_project/taxi-pipeline/README.md)
 
 
+### Module 6 - [Batch Processing with PySpark](modules/module_6/)
+Link to homework 6 - [Project_06](modules/module_6/project_06/README.md)
+
 ## Acknowledgments
 
 Thank you to the Data Engineering Zoom Camp Instructors and Data.Talks Club for providing tutorials and guidance on building real world projects!
