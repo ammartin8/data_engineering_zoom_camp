@@ -1,4 +1,4 @@
-# Project 7 - Streaming Data Processing with Flink and Kafka (Redpanda)
+# Module 7: Streaming Data Processing with Flink and Kafka (Redpanda)
 
 In this assignment, I practiced streaming with Kafka (Redpanda) and PyFlink.
 
@@ -51,15 +51,13 @@ print(f'took {(t1 - t0):.2f} seconds')
 ```
 
 How long did it take to send the data?
-> ANSWER: 300 seconds 
+> ANSWER: 10 seconds
 
-**Note**: Selecting closest answer due to the process taking 543.27 seconds. This process was ran locally with limited available computer resources.
+**Note**: Selecting closest answer due to the process taking 8.85 seconds. Adjusted producer.py code to comment out extra print commands after learning it dramatically increases processing time by x64 (in my case)!!! 🙀.
 
 Bash snippet:
 ```bash
-Sent: Ride(lpep_pickup_datetime=1761954300000, lpep_dropoff_datetime=1761955680000, PULocationID=255, DOLocationID=25, passenger_count=nan, trip_distance=4.2, tip_amount=4.86, total_amount=37.29)
-Sent: Ride(lpep_pickup_datetime=1761952980000, lpep_dropoff_datetime=1761953820000, PULocationID=195, DOLocationID=33, passenger_count=nan, trip_distance=3.0, tip_amount=0.0, total_amount=19.6)
-took 543.27 seconds
+took 8.85 seconds
 ```
 
 

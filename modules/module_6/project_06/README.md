@@ -1,6 +1,6 @@
 # Module 6 - Batch Processing with PySpark
 
-In this assignment we'll put what we learned about Spark in practice.
+In this assignment I put what we learned about Spark in practice.
 
 I used the Yellow 2025-11 data from the official website:
 

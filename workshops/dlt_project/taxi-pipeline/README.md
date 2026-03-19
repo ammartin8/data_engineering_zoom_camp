@@ -1,12 +1,12 @@
-# Homework: Build Your Own dlt Pipeline
+# Module 5: Dataplatforms - Build Your Own dlt Pipeline
 
 ## The Challenge
-For this homework, build a dlt pipeline that loads NYC taxi trip data from a custom API into DuckDB and then answer some questions using the loaded data.
+For this assignment, I built a dlt pipeline that loads NYC taxi trip data from a custom API into DuckDB and then answered some questions using the loaded data.
 
 
 ## Data Source
 
-You'll be working with **NYC Yellow Taxi trip data** from a custom API (not available as a dlt scaffold). This dataset contains records of individual taxi trips in New York City.
+I worked with **NYC Yellow Taxi trip data** from a custom API (not available as a dlt scaffold). This dataset contains records of individual taxi trips in New York City.
 
 | Property | Value |
 |----------|-------|
@@ -20,7 +20,8 @@ You'll be working with **NYC Yellow Taxi trip data** from a custom API (not avai
 [taxi_data_pipeline_eda.ipynb](taxi_data_pipeline_eda.ipynb)**
 
 ## Question 1: What is the start date and end date of the dataset?
-ANSWER: 2009-06-01 to 2009-07-01
+
+>ANSWER: 2009-06-01 to 2009-07-01
 
 Python Query:
 ```python
@@ -30,7 +31,8 @@ print(df.trip_dropoff_date_time.describe())
 
 
 ## Question 2: What proportion of trips are paid with credit card?
-ANSWER: 26.66%
+
+> ANSWER: 26.66%
 
 Python Query:
 ```
@@ -38,7 +40,8 @@ df.payment_type.value_counts(normalize=True)
 ```
 
 ## Question 3: What is the total amount of money generated in tips?
-ANSWER: $6,063.41
+
+>ANSWER: $6,063.41
 
 Python Query:
 ```python

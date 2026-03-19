@@ -1,4 +1,4 @@
-# Homework 4 Responses: Analytical Engineering with dbt
+# Module 4 Responses: Analytical Engineering with dbt
 
 The objective was to create a dbt project that creates a data warehouse using the NYC Taxi green & yellow taxi data files from 2019-2020.
 
@@ -28,7 +28,7 @@ models/
 
 If you run dbt run --select int_trips_unioned, what models will be built?
 
-**ANSWER: `int_trips_unioned` only**
+>**ANSWER: `int_trips_unioned` only**
 
 *Note: assumming stg_green_tripdata & stg_yellow_tripdata were already built
 
@@ -48,7 +48,7 @@ Your model fct_trips has been running successfully for months. A new value 6 now
 
 What happens when you run dbt test --select fct_trips?
 
-**ANSWER: dbt will fail the test, returning a non-zero exit code**
+>**ANSWER: dbt will fail the test, returning a non-zero exit code**
 
 *Note: making the assumption that the payment test is defined under model name: `fct_trips`
 
@@ -60,7 +60,7 @@ After running your dbt project, query the fct_monthly_zone_revenue model.
 
 What is the count of records in the fct_monthly_zone_revenue model?
 
-**ANSWER: 12,184**
+>**ANSWER: 12,184**
 
 SQL Query:
 
@@ -75,7 +75,7 @@ Using the fct_monthly_zone_revenue table, find the pickup zone with the highest 
 
 Which zone had the highest revenue?
 
-**ANSWER: East Harlem North**
+>**ANSWER: East Harlem North**
 
 SQL Query:
 ```sql
@@ -101,7 +101,7 @@ where rev_total = (select max(rev_total) from summ_tbl)
 ## Question 5. Green Taxi Trip Counts (October 2019)
 Using the fct_monthly_zone_revenue table, what is the total number of trips (total_monthly_trips) for Green taxis in October 2019?
 
-**ANSWER: 384,624**
+>**ANSWER: 384,624**
 
 SQL Query:
 ```sql
@@ -124,7 +124,7 @@ Create a staging model for the For-Hire Vehicle (FHV) trip data for 2019.
 
 What is the count of records in stg_fhv_tripdata?
 
-**ANSWER: 43,244,693**
+>**ANSWER: 43,244,693**
 
 SQL Query:
 ```
