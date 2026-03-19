@@ -43,9 +43,9 @@ This repository contains the code artifacts and documentation for each stage of 
 ├── [02-Orchestration/](modules/module_2/project_02/README.md)     # Kestra workflows and schedules \
 ├── [03-Warehousing/](modules/module_3/project_03/README.md)         # BigQuery partitioning strategies & Data Modeling \
 ├── [04-Analytics/](modules/module_4/project_04/README.md)           # dbt projects, DuckDB local transforms \
-├── [05-Data-Platform/](workshops/dlt_project/taxi-pipeline/README.md)           # API connectors, data normalization scripts \
-├── [06-Batch-Processing/](modules/module_6/project_06/README.md)       # End-to-end pipeline definitions on dltHub \
-├── [07-Batch-and-Stream/](modules/module_7/project_07/README.md)    # Spark DataFrames and Kafka Streams implementations \
+├── [05-Data-Platform/](workshops/dlt_project/taxi-pipeline/README.md)           # End-to-end pipeline definitions on dltHub \
+├── [06-Batch-Processing/](modules/module_6/project_06/README.md)       # Batch data processing with Apache Spark and Spark Dataframe Transformations \
+├── [07-Batch-and-Stream/](modules/module_7/project_07/README.md)    # Kafka Streams implementations with PyFlink and RedPanda \
 └── Final_Project/          # Capstone project: In-Progress
 
 ## 🏆 Key Highlights from the Course
