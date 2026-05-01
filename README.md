@@ -46,7 +46,9 @@ This repository contains the code artifacts and documentation for each stage of 
 ├── [05-Data-Platform/](workshops/dlt_project/taxi-pipeline/README.md)           # End-to-end pipeline definitions on dltHub \
 ├── [06-Batch-Processing/](modules/module_6/project_06/README.md)       # Batch data processing with Apache Spark and Spark Dataframe Transformations \
 ├── [07-Batch-and-Stream/](modules/module_7/project_07/README.md)    # Kafka Streams implementations with PyFlink and RedPanda \
-└── Final_Project/          # Capstone project: In-Progress
+└── [Final_Project](https://github.com/ammartin8/hard_drive_analytics_dashboard)/          # Capstone project: Storage Drive Analytics Dashboard that ingests, processes, transforms, and visualizes Backblaze's storage drive failure data.
+
+
 
 ## 🏆 Key Highlights from the Course
 1. CI/CD for Data: I learned how to test, document, and deploy data models using dbt, ensuring reliability before hitting production.
